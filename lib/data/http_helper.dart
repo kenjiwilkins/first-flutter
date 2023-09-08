@@ -7,7 +7,6 @@ class HttpHelper {
   final String protocol = 'https';
   final String host = 'api.openweathermap.org';
   final String path = '/data/2.5/weather';
-  // final String apiKey = '8db5efdb84f87662c3a451627c7d00b8';
   final String apiKey = dotenv.env['OPEN_WEATHER_API_KEY'] as String;
 
   Future<Weather> getWeather(String location) async {
